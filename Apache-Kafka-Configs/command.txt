@@ -1,0 +1,28 @@
+
+# starts the zookeeper
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+
+# starts the kafka-server
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+
+# create a new topic
+.\bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test1
+
+
+# create a new topic
+.\bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test2
+
+
+# list all the topics under localhost:9092
+.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
+
+
+# add a topic to producer broker-list (We'll get an input-caret(>) to enter our message(s))
+.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic test1
+
+
+# add a topic to consumer (We'll get our message(s) that the producer published)
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test1 --from-beginning
+
