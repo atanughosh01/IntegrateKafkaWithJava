@@ -1,2 +1,3 @@
-# JavaSpringBasics
-Basics of Spring Framework in Java Programming Language
+# IntegrateKafkaWithJava
+
+Integration of Apache Kafka Version-3.2.0 with Core Java
