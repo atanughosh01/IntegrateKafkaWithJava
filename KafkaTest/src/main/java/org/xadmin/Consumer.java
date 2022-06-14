@@ -56,6 +56,7 @@ public class Consumer {
                         ",\n Offset: " + record.offset() +
                         ",\n @Timestamp: " + record.timestamp() + "\n");
             }
+            // consumer.close();
         }
 
         // 7. close the consumer
