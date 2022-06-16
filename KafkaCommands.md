@@ -1,10 +1,3 @@
-# IntegrateKafkaWithJava
-
-Integration of Apache Kafka Version-3.2.0 with Core Java
-
-<br>
-
-# Kafka-Commands (Windows)
 
 ### 1. Starts the zookeeper
 ```
